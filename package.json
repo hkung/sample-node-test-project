@@ -1,0 +1,22 @@
+{
+  "name": "sample-node-test-project",
+  "version": "0.0.1",
+  "description": "Sample node test project for running tests against Twitter's Public REST API",
+  "scripts": {
+    "test": "jasmine-node --verbose spec && node lib/utils/restoreAccount.js",
+    "limits": "node lib/utils/getRateLimits.js",
+    "restore": "node lib/utils/restoreAccount.js"
+  },
+  "keywords": [
+    "node",
+    "jasmine"
+  ],
+  "author": "Henry Kung",
+  "license": "MIT",
+  "dependencies": {
+    "jasmine": "^2.4.1",
+    "jasmine-node": "^1.14.5",
+    "oauth": "^0.9.14",
+    "request": "^2.72.0"
+  }
+}
